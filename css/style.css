@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+}
+.main{
+	
+}
+
+.header{
+	display: flex;
+	align-content:center;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+}
+.header .logo{	
+	max-width: 10%;
+	flex:5%;
+}
+.header .logo img{
+	max-width: 100%;
+}
+ .contact-btn{
+	background-color: #fff;
+	outline: none;
+	border: 2px solid #32a8dc;
+	padding: 10px 30px;
+	font-size: 18px;
+}
+.learn-btn{
+	background-color: #32a8dc;
+	outline: none;
+	border:none;
+	padding: 10px 30px;
+	font-size: 18px;
+}
+.learn-btn:hover{
+	background-color: #fff;
+	border: 2px solid #32a8dc;
+	color: #000;
+}
+.learn-btn a{
+	text-decoration: none;
+	color: #fff;
+}
+ .contact-btn:hover{
+	background-color: #32a8dc;
+	color: #fff;
+	cursor: pointer;
+}
+
+.nav{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex:75%;
+}
+.contact{
+	flex:10%;
+	justify-content: center;
+}
+.nav ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+}
+.nav ul li{
+	justify-content: space-between;
+	margin: 0 10px;
+}
+.nav li a{
+	text-decoration: none;
+	color:  #000;
+	font-size: 20px;
+	font-weight: bold
+}
+.banner .banner-img{
+	width: 100%;
+	position: relative;
+	visibility: 0.7;
+}
+.banner .banner-img img{
+	width: 100%;
+}
+.banner{
+	position: relative;
+}
+.banner-title{
+	position: absolute;
+	margin: 0;
+	top: 20%;
+	left: 30%;
+	font-size: 50px;
+	font-family: 'Pattaya', sans-serif;
+	color: #000;
+}
+.service{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 10px 100px;
+			margin: 0px;
+		}
+		.hello{
+			align-content: center;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+			flex:2;
+		}
+		.hi{
+			display: flex;
+			flex-wrap: wrap;
+			flex:4;
+			padding: 5px 30px;
+		}
+		.hello p{
+			font-size: 40px;
+		}
+		.service-item{
+			color: #fff;
+			font-size: 25px;
+			text-transform: uppercase;
+			margin: 2px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		.service-item .service-title{
+			margin: 0;
+			text-align: center;
+		}
+		.one{
+			background-color: #dd4e3f;
+			flex:25%;
+		}
+		.two{
+			background-color: #fba52a;
+			flex:25%;
+		}
+		.three{
+			background-color:#49aeb6;
+			flex:25%;
+		}
+		.four{
+			background-color: #464155;
+			flex:25%;
+		}
+		.five{
+			background-color: #32a8dc;
+			flex:25%;
+		}
+		.six{
+			background-color: #AB2F4C;
+			flex:25%;
+		}
+		.icon{
+			color: #fff;
+
+		}
+
+
+.title{
+	text-align: center;
+	font-size: 40px;
+}
+.message{
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	padding-top: 0;
+	margin: 0;
+}
+.message-container{
+	background-color: #f9faf8;
+	padding: 20px;
+}
+.message .message-form{
+	width: 30%;
+	padding: 40px;
+}
+
+.message .message-form .user-input{
+	height: 40px;
+	width: 100%;
+	border:none;
+	background-color: inherit;
+	border-bottom: 2px solid #32a8dc;
+}
+.message .message-form .user-message{
+	height: 80px;
+	width: 100%;
+	border:none;
+	background-color: inherit;
+	border-bottom: 2px solid #32a8dc;
+}
+.message .message-form input:focus{
+	border:none;
+	outline: none;
+	border-bottom: 2px solid #32a8dc;
+}
+::placeholder{
+	color: #000;
+	padding: 5px;
+	font-size: 15px;
+}
+.team{
+	padding: 40px;
+}
+.team .team-info{
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 5px 5px 3px grey;
+}
+
+.team-img{
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.footer{
+		background-color:#32a8dc; 
+		padding: 50px;
+}
+
+.footer1{
+	display: flex;
+	color: #fff;
+}
+.footer1 .map{
+	padding: 30px;
+	flex: 2;
+	order: 3;
+}
+.footer1 .explore{
+	flex: 1;
+	order: 2;
+	text-align: center;
+}
+.footer1 .explore p a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #BDDFF4;
+}
+.footer1 .location{
+	flex: 2;
+	order: 1;
+	text-align: left;
+}
+.footer1 .location p{
+	color: #BDDFF4;
+}
+
+
+.footer2 .social{
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.fb-icon,.whats-icon,.insta-icon,.viber-icon,.pin-icon,.yt-icon{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+.fb-icon{
+		background-color: #3b5998;
+}
+.whats-icon{
+	background-color: #25D366;
+}
+.insta-icon{
+	background-color: #E1306C;
+}
+.viber-icon{
+	background-color: #665CAC;
+}
+.pin-icon{
+	background-color:#E60023;
+}
+.yt-icon{
+	background-color: #FF0000;
+}
+
+.footer2  p{
+	color: #fff;
+	margin: 8px;
+}
