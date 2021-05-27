@@ -4,13 +4,122 @@
 	<title></title>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
-		
-	</style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+		}
+		.outlet-container{
+			padding: 30px 50px;
+			background-color: #13616D;
+			color: #fff;	
+		}
+		.outlet-item{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.outlet-item .outlet{
+				display: flex;
+				width: 40%;
+				margin: auto;
+				justify-content: space-around;
+				flex-wrap: wrap;
+		}
+		.outlet-image{
+			max-width:40%; 
+		}
+		.outlet-image img{
+			max-width: 100%;
+		}
+		.outlet-text{
+			text-align: justify;
+			font-size: 18px;
+		}
+
+		 .menu-btn{
+		 	background-color: #fa9324;
+		outline: none;
+		border: none;
+		padding: 10px 30px;
+		font-size: 18px;
+		color: #fff;
+	}
+	.menu-btn:hover{
+		background-color: #fbbd18;
+	}
+	.swad{
+		background-color:  #9e0505;
+	}
+	.swad:hover{
+		background-color: red;
+	}
+	
+
+	@media only screen and (max-width: 579px) {
+			.outlet-container{
+				padding: 10px;
+			}
+			.outlet-item .outlet{
+				flex-direction: column;
+				justify-content: center;
+			}
+			.outlet-text{
+				text-align: center;
+				font-size: 15px;
+			}
+			.outlet-image{
+				max-width: 60%;
+				margin: auto;
+			}
+			.hide{
+				display: none;
+			}
+			.menu-btn{
+				font-size: 15px;
+				padding: 5px;
+			}
+	}
+	
+</style>
+
+
 </head>
 <body>
-	<div class="porfolio"> 
-		
+	<div class="outlet-container">
+		<h2 align="center">OUR OUTLET</h2>
+		<div class="outlet-item">
+			<div class="outlet">
+				<div class="outlet-image">
+					<img src="../images/swadspot.jpg">
+				</div>
+				<div class="outlet-text">
+					<p>SWADSPOT</p>
+					<p class="hide">Fast Food Restaurant</p>
+					<p>Mandikhatar Road</p>
+					<p class="hide">Kathmandu, Nepal, 44600</p>
+					<p align="center" >
+						<button class="menu-btn swad">GET MENU</button>
+					</p>
+				</div>
+			</div>
+			<div class="outlet">
+				<div class="outlet-image">
+					<img src="../images/swadspot.jpg">
+				</div>
+				<div class="outlet-text">
+					<p>SWADSPOT</p>
+					<p class="hide">Fast Food Restaurant</p>
+					<p>Mandikhatar Road</p>
+					<p class="hide">Kathmandu, Nepal, 44600</p>
+					<p align="center" >
+						<button class="menu-btn">GET MENU</button>
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>

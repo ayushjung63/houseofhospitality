@@ -12,7 +12,20 @@ body {
 	align-content:center;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 40px;
+	position: relative;
+}
+.header img{
+		max-width: 100%;
+	}
+
+	.navbar{
+	display: flex;
+	align-content:center;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 5px;
+	margin: 0px 120px;
 }
 .header .logo{	
 	max-width: 10%;
@@ -54,7 +67,8 @@ body {
 	display: flex;
 	align-items: center;
 	align-content: center;
-	flex:75%;
+	justify-content: center;
+	flex:70%;
 }
 .contact{
 	flex:10%;
@@ -71,30 +85,27 @@ body {
 }
 .nav li a{
 	text-decoration: none;
-	color:  #000;
+	color:  #fff;
 	font-size: 20px;
-	font-weight: bold
+	text-transform: uppercase;
 }
-.banner .banner-img{
-	width: 100%;
-	position: relative;
-	visibility: 0.7;
-}
-.banner .banner-img img{
-	width: 100%;
-}
-.banner{
-	position: relative;
-}
-.banner-title{
+
+.header-text{
+	font-size: 35px;
 	position: absolute;
-	margin: 0;
-	top: 20%;
-	left: 30%;
-	font-size: 50px;
-	font-family: 'Pattaya', sans-serif;
-	color: #000;
+	top: 30%;
+	left: 10%;
+	text-transform: uppercase;
+	color: #fff;
 }
+.header-text p{
+	margin: 0;
+}
+.header-text p .bold{
+	font-weight: bolder;
+}
+
+
 .service{
 			display: flex;
 			flex-wrap: wrap;
@@ -124,6 +135,7 @@ body {
 			text-transform: uppercase;
 			margin: 2px;
 			display: flex;
+			flex-wrap: wrap;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -169,6 +181,7 @@ body {
 }
 .message{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 20px;
 	padding-top: 0;
@@ -228,15 +241,18 @@ body {
 
 .footer1{
 	display: flex;
+	flex-wrap: wrap;
 	color: #fff;
 }
 .footer1 .map{
 	padding: 30px;
 	flex: 2;
+	flex-wrap: wrap;
 	order: 3;
 }
 .footer1 .explore{
 	flex: 1;
+	flex-wrap: wrap;
 	order: 2;
 	text-align: center;
 }
@@ -247,6 +263,7 @@ body {
 }
 .footer1 .location{
 	flex: 2;
+	flex-wrap: wrap;
 	order: 1;
 	text-align: left;
 }
@@ -291,4 +308,133 @@ body {
 .footer2  p{
 	color: #fff;
 	margin: 8px;
+}
+.outlet-container{
+			padding: 30px 50px;
+			background-color: #13616D;
+			color: #fff;	
+		}
+		.outlet-item{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.outlet-item .outlet{
+				display: flex;
+				width: 40%;
+				margin: auto;
+				justify-content: space-around;
+				flex-wrap: wrap;
+		}
+		.outlet-image{
+			max-width:40%; 
+		}
+		.outlet-image img{
+			max-width: 100%;
+		}
+		.outlet-text{
+			text-align: justify;
+			font-size: 18px;
+		}
+
+		 .menu-btn{
+		 	background-color: #fa9324;
+		outline: none;
+		border: none;
+		padding: 10px 30px;
+		font-size: 18px;
+		color: #fff;
+	}
+	.menu-btn:hover{
+		background-color: #fbbd18;
+	}
+	.swad{
+		background-color:  #9e0505;
+	}
+	.swad:hover{
+		background-color: red;
+	}
+
+@media only screen and (max-width: 700px) {
+	.header .navbar{
+		margin: 2px;
+		justify-content: flex-start;
+	}
+	.header .navbar .nav{
+		display: none;
+	}
+	.header .navbar .logo{
+		display: none;
+	}
+	.header .navbar .contact .contact-btn{
+		font-size: 10px;
+		
+	}
+	.header-text{
+		font-size: 15px;
+		top: 25%;
+	}
+
+	/*SERVICES*/
+		.service{
+			padding: 2px;
+			margin: 2px;
+		}
+		.hello{
+			text-align: center;
+			margin: 0;
+		}
+		.hi {
+			flex-direction: column;
+		}
+
+		/*OUTLET*/
+			.outlet-container{
+				padding: 20px;
+			}
+			.outlet-item .outlet{
+				flex-direction: column;
+				justify-content: center;
+			}
+			.outlet-text{
+				text-align: center;
+				font-size: 12px;
+
+
+			}
+			.outlet-image{
+				max-width: 60%;
+				margin: auto;
+			}
+			.hide{
+				display: none;
+			}
+			.menu-btn{
+				font-size: 15px;
+				padding: 5px;
+			}
+
+			/*MESSAGE*/
+
+			.message-container{
+				padding: 5px;
+			}
+			.message{
+				width: 90%;
+			}
+			.team .team-info{
+				display: block;
+			}
+			.footer{
+				padding: 10px;
+			}
+
+			.footer1 .map{
+				display: none;
+			}
+			.footer1 .explore{
+				display: none;
+			}
+
+		
 }
