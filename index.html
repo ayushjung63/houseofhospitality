@@ -3,21 +3,31 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="icon" type="img/gif" href="images/favicon.ico" sizes="64x64" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 <title>House Of Hospitality</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(window).scroll(function(){
+  var sticky = $('.navbar'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 100) sticky.addClass('sticky');
+  else sticky.removeClass('sticky');
+});
+</script>
 </head>
 <body>
-<div class="main">
+<div class="main" >
   
   <!-- TOP HEADER -->
- <div class="header"> 
+ <div class="header" id="header"> 
     <img src="images/banner.png" />
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <div class="logo"> 
-            <img src="images/logo.png">
+            <a href="#header"><img src="images/logo.png"></a>
           </div>
 
         <div class="nav">
@@ -31,7 +41,7 @@
           </div>
 
           <div class="contact">
-            <a class="bar"><i class="fas fa-bars fa-3x"></i></a>
+            <a class="bar"><i class="fas fa-bars fa-2x"></i></a>
               <a href="#message"><button class="contact-btn"> <i class="fas fa-phone-alt"></i> Contact</button></a>
               
           </div>
@@ -52,33 +62,35 @@
 
  <div class="service" id="service">
       <div class="hello">
-        <p>OUR SERVICES</p>
+        <p class="title">OUR SERVICES</p>
       </div>
       <div class="hi">
         <div class="service-item one">
           <p class="service-title">Menu  <br/> Planning</p>
-           <div class="service-icon"><p class="icon"><i class="fas fa-utensils fa-4x"></i></p></div> 
+           <div class="service-icon"><p class="icon"><!-- <i class="fas fa-utensils fa-4x"></i> -->
+             <i class="fas fa-concierge-bell fa-4x"></i>
+           </p></div> 
         </div>
          <div class="service-item two">
           <p class="service-title">Restaurant  <br/> Management</p>
-           <div class="service-icon"><p class="icon"><i class="fas fa-utensils fa-4x"></i></p></div> 
+           <div class="service-icon"><p class="icon"><i class="fas fa-hotel fa-4x"></i></p></div> 
            
         </div>
          <div class="service-item three">
            <p class="service-title">Sales  <br/> Promotion</p>
-           <div class="service-icon"><p class="icon"><i class="fas fa-utensils fa-4x"></i></p></div> 
+           <div class="service-icon"><p class="icon"><i class="fab fa-adversal fa-4x"></i></p></div> 
            
         </div>
          <div class="service-item four">
-          <div class="service-icon"><p class="icon"><i class="fas fa-utensils fa-4x"></i></p></div> 
+          <div class="service-icon"><p class="icon"><i class="fas fa-glass-cheers fa-4x"></i></p></div> 
       <p class="service-title">Hotel  <br/> Training</p>
         </div>
         <div class="service-item five">
-          <div class="service-icon"><p class="icon"><i class="fas fa-utensils fa-4x"></i></p></div> 
+          <div class="service-icon"><p class="icon"><i class="far fa-calendar-alt fa-4x"></i></p></div> 
       <p class="service-title">Event <br/> Management</p>
         </div>
         <div class="service-item six">
-          <div class="service-icon"><p class="icon"><i class="fas fa-utensils fa-4x"></i></p></div> 
+          <div class="service-icon"><p class="icon"><i class="fas fa-users fa-4x"></i></p></div> 
       <p class="service-title">Counselling</p>
         </div>
             </div>
@@ -87,17 +99,18 @@
 
   <!-- OUTLET -->
   <div class="outlet-container" id="outlet">
-    <p class="title">OUR OUTLET</h2><hr width="60%" /><br/>
+    <p class="title">OUR OUTLET</p><hr width="60%" /><br/>
 
     <div class="outlet-item">
       <div class="outlet">
         <div class="outlet-image">
-          <img src="images/swadspot.jpg">
+          <a href="https://www.facebook.com/Swadspot" target="_blank"><img src="images/swadspot.jpg"></a>
         </div>
         <div class="outlet-text">
-          <p>SWADSPOT</p>
+          <p><a href="https://www.facebook.com/Swadspot" target="_blank">SWADSPOT</p></a>
           <p class="hide">Fast Food Restaurant</p>
-          <p>Mandikhatar Road</p>
+          <p><a href="https://www.google.com/maps/place/SwadSpot/@27.7407768,85.3483632,17z/data=!4m5!3m4!1s0x39eb19bfebf46ffb:0x7295dc8e1005ba13!8m2!3d27.7405487!4d85.3486439" 
+            target="_blank" class="direc">Mandikhatar Road</p></a>
           <p class="hide">Kathmandu, Nepal, 44600</p>
           <p align="center" >
              <a href="images/swadmenu.jpg" target="_blank"><button class="menu-btn swad">GET MENU</button></a>
@@ -106,12 +119,12 @@
       </div>
       <div class="outlet">
         <div class="outlet-image">
-          <img src="images/maam.jpg">
+         <a href="https://www.facebook.com/maamkitchen2" target="_blank"> <img src="images/maam.jpg"></a>
         </div>
         <div class="outlet-text">
-          <p>MAAM KITCHEN</p>
+          <p><a href="https://www.facebook.com/maamkitchen2" target="_blank">MAAM KITCHEN</p></a>
           <p class="hide">Kitchen / Cooking</p>
-          <p>Mandikhatar Road</p>
+          <p><a href="" class="direc">Dillibazar, Dhobidhara</p></a>
           <p class="hide">Kathmandu, Nepal, 44600</p>
           <p align="center" >
             <a href="images/maammenu.jpg" target="_blank"><button class="menu-btn">GET MENU</button></a>
@@ -136,11 +149,13 @@
         </form>
       </div>
       <div class="team">
+        
         <div class="team-info">
-        <h3>Meet our brilliant and knowledgeable team</h3>
-          <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="team-img" style="width:150px">
-          <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="team-img" style="width:150px">
-          <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="team-img" style="width:150px">
+         <h3>Meet our brilliant and knowledgeable team</h3>
+          <img src="images/ajay.jpg" alt="Avatar" class="team-img" style="width:200px">
+        
+        <img src="images/ajay.jpg" alt="Avatar" class="team-img" style="width:200px">
+        <img src="images/ajay.jpg" alt="Avatar" class="team-img" style="width:200px">
         </div>
       </div>
     </div>
@@ -185,12 +200,14 @@
   <hr width="60%" />
   <div class="footer2">
     <div class="social">
-        <div class="fb-icon"><p><i class="fab fa-facebook-f fa-2x"></i></p></div>
+        <div class="fb-icon"><p><a href="https://www.facebook.com/houseofhospitality.nepal" target="_blank">
+          <i class="fab fa-facebook-f fa-2x"></i></a></p></div>
         <div class="whats-icon"><p><i class="fab fa-whatsapp fa-2x"></i></i></p></div>
-        <div class="insta-icon"><p><i class="fab fa-instagram fa-2x"></i></p></div>
+        <div class="insta-icon"><p><a href="https://www.instagram.com/houseofhospitalitynepal/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></p></div>
         <div class="viber-icon"><p><i class="fab fa-viber fa-2x"></i></p></div>
-        <div class="pin-icon"><p><i class="fab fa-pinterest-p fa-2x"></i></p></div>
-        <div class="yt-icon"><p><i class="fab fa-youtube fa-2x"></i></p></div>
+        <div class="pin-icon"><p><a href="https://www.linkedin.com/in/house-of-hospitality-nepal-20224119b/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i> </a></p></div>
+        <div class="yt-icon"><p><a href="https://www.youtube.com/channel/UCU6wW-S9-ARe-Rq1WOEkD3A" target="_blank">
+          <i class="fab fa-youtube fa-2x"></i></a></p></div>
     </div>
     <p style="color: #fff" align="center">
       Copyright &copy; 2021 House of Hospitality
