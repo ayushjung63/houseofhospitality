@@ -437,6 +437,7 @@ a{
 		.service{
 			padding: 2px;
 			margin: 2px;
+			display: block;
 		}
 		.service-item{
 			flex-direction: row;
