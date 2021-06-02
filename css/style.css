@@ -8,7 +8,13 @@ a{
 	color: #fff;
 	cursor: pointer;
 }
+.title{
+	font-family: 'Cairo', sans-serif;
+}
 
+.main{
+background-color:#E8E5E6 ;
+}
 
 .header{
 	display: flex;
@@ -40,6 +46,7 @@ a{
 		margin-top: -5px;
 		z-index: 1;
 	}
+
 .header .logo{	
 	max-width: 10%;
 	flex:5%;
@@ -54,6 +61,7 @@ a{
 	border: 2px solid #32a8dc;
 	padding: 10px 30px;
 	font-size: 18px;
+	transition: 0.2s color;
 }
 .learn-btn{
 	background-color: #32a8dc;
@@ -73,7 +81,7 @@ a{
 }
  .contact-btn:hover{
 	background-color: #32a8dc;
-	color: #000;
+	color:  #fba52a;
 	cursor: pointer;
 }
 
@@ -103,6 +111,9 @@ a{
 	font-size: 20px;
 	text-transform: uppercase;
 }
+.nav li a:hover{
+	color:  #fba52a;
+}
 
 .header-text{
 	font-size: 35px;
@@ -120,6 +131,23 @@ a{
 }
 
 
+/*ABOUT*/
+.about{
+	position: relative;
+	top: -20%;
+}
+
+.about .title{
+	margin: 10px;
+}
+.about-text{
+	margin: 0;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 25px;
+}
+
+/*SERVICE*/
 .service{
 			display: flex;
 			flex-wrap: wrap;
@@ -132,7 +160,7 @@ a{
 			align-items: center;
 			justify-content: center;
 			margin: auto;
-			flex:2;
+			flex:1.5;
 		}
 		.hi{
 			display: flex;
@@ -362,6 +390,7 @@ a{
 		padding: 10px 30px;
 		font-size: 18px;
 		color: #fff;
+		transition: 0.2s background-color;
 	}
 	.menu-btn:hover{
 		background-color: #fbbd18;
@@ -380,6 +409,9 @@ a{
 	}
 	.direc{
 		color: #fff;
+	}
+	.msg{
+		display: none;
 	}
 
 @media only screen and (max-width: 700px) {
@@ -411,7 +443,8 @@ a{
 		display: block;
 		position: relative;
 		left: 10px;
-		max-width: 30%;
+		max-width: 35%;
+		padding: 5px;
 	}
 	.header .navbar .contact .contact-btn{
 		display: none;
@@ -432,6 +465,11 @@ a{
 		background-color: #32a8dc;
 	}
 
+	/*ABOUT*/
+	.about-text{
+		font-size: 13px;
+	}
+
 
 	/*SERVICES*/
 		.service{
@@ -448,7 +486,7 @@ a{
 		}
 		.hello p{
 			margin: 5px;
-			font-size: 30px;
+			font-size: 25px;
 		}
 		.hi {
 			flex-direction: column;
@@ -478,10 +516,11 @@ a{
 				margin-bottom: 5px;
 			}
 			.outlet-text{
-				text-align: left;
+				text-align: center;
 				font-size: 18px;
 			}
 			.outlet-text p{
+				text-align: center;
 				margin: 0;
 				
 			}
@@ -517,6 +556,7 @@ a{
 			}
 			.team{
 				margin: auto;
+				order: 1;
 			}
 			.team .team-info{
 				display: block;
@@ -528,10 +568,18 @@ a{
 			.message .message-form{
 				width: 100%;
 				padding: 0;
-				margin: 0;
+				margin-top: 10px;
+				order: 2;
 			}
 			.message .message-form .user-input{
 				width: 100%;
+			}
+			.message-container .title{
+				display: none;
+			}
+			.message-form .msg{
+				display: block;
+				margin-top: 10px;
 			}
 			/*FOOTER*/
 			.footer{
